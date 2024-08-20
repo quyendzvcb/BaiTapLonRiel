@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.4;
+    scroll-snap-type: mandatory;
+}
+
+header img{
+    position: relative;
+    transition: 0.6;
+}
+
+header {
+    font-family: 'Oswald', sans-serif;
+    min-height: 550px;
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    background-size: cover;
+    align-items: center;
+    background: #ffffff url(Images/pexels-linh-ngo-98931791-10179062.jpg) center center/cover no-repeat;
+    transition: 0.6s;
+    z-index: 1000000;
+    position: relative;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li a{
+    font-size: 2.5em;
+    position: relative;
+    display: inline-block;
+    position:relative;
+    transition: 0.6s;
+    z-index: 1000000;
+}
+
+header .sticky{
+    padding: 5px 100px;
+    background: #fff;
+}
+
+header li a::before{
+    content: '';
+    position: absolute;
+    top: 110%;
+    left:0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+header li a:hover::before{
+    width: 100%;
+}
+
+nav li{
+    display: inline-block;
+    position:relative;
+}
+
+nav a {
+    position: relative;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-left: 70px;
+}
+
+
+header img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 70px;
+}
+
+header .sticky ul li a{
+    color: #000;
+}
+
+.content h1{
+    margin-top: 50px;
+}
+
+.left hr {
+    height: 0.2px;
+    background-color: rgb(6, 6, 6);
+}
+.content hr{
+    height: 4px;
+    background-color: rgb(6, 6, 6);
+}
+div .main{
+    border: solid 1px;
+}
+a{
+    text-decoration: none;
+}
+.left{
+    float:left;
+    width: 20%;
+    margin:25px 40px;
+    position: sticky;
+    top: 20px;
+    height: 100dvh;
+    min-width: 250px;
+}   
+.left div{
+    text-decoration: none;
+    color: rgba(8, 49, 181, 0.832);
+    margin: 30px 0px;
+    font-weight: 10;
+}
+.left div:hover a{
+    text-decoration: underline;
+    height: 10px
+}
+.content{
+    align-items:flex-start;
+    display: flow-root;
+}
+.content p{
+    margin: 40px;
+    font-size: 25px;
+    font-weight: lighter;
+    align-items: center;
+    width: 90%
+}
+.content h1{
+    color: rgb(3, 84, 3);
+    font-family: "Platypi", serif;
+    text-align: center;
+    margin: 50px;
+    padding-right: 80px;
+    font-size: 45px;
+}
+.content .double{
+    width: 40%;
+    height: 320px;
+    border: 1px solid;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: 55px;
+    border-style: hidden;
+}
+.content h2{
+    color: rgb(3, 61, 3);
+    font-family: "Platypi", serif;
+    margin: 50px;
+}
+.content .full{
+    width: 100%;
+    border: 1px solid;
+    border-radius: 10px;
+    align-items: center;
+    border-style: hidden;
+}
+
+.content li{
+    margin-left: 90px;
+}
+.content .triple{
+    width: 30%;
+    height: 250px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-style: hidden;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.content .topRight{
+    width: 30%;
+    vertical-align: middle;
+    float: right;
+    border: 1px solid;
+    border-style: hidden;
+    border-radius: 10px;
+    margin-right: 90px;
+    padding-left: 20px;
+}
+.content .topLeft{
+    width: 30%;
+    vertical-align: middle;
+    float: left;
+    border: 1px solid;
+    border-style: hidden;
+    border-radius: 10px;
+    margin: 10px 30px;
+}
+.content .thin{
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    margin-left: 50px;
+}
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    height: 200px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer p{
+   padding-top: 50px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
